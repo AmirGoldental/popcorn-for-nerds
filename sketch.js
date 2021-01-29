@@ -22,8 +22,6 @@ function draw() {
     }
     endShape();
 }
-function touchStarted() {
-    if (getAudioContext().state !== 'running') {
-        getAudioContext().resume();
-    }
+function start_recording() {
+    getAudioContext().resume();
 }

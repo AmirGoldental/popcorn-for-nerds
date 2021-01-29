@@ -24,4 +24,6 @@ function draw() {
 }
 function start_recording() {
     getAudioContext().resume();
+    var element = document.getElementById("sample-rate");
+    element.outerText = mic.amplitude.audiocontext.sampleRate
 }
